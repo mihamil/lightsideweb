@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} ^.*(sql|zip)$
+RewriteRule . - [R=403,L]
+</IfModule>
